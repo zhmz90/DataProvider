@@ -7,9 +7,7 @@ files = [l1fq1, l1fq2, l2fq1, l2fq2]
 try
     mkdir(dir_name)
     map(touch, reverse(files))
-
     d = @task dataprovider(dir_name)
-
     i = 1
     while true
         fq = consume(d)

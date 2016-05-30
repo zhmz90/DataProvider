@@ -1,12 +1,8 @@
 module DataProvider
 
-function __init__()
-    if !in("BasePlus", keys(Pkg.installed()))
-        Pkg.clone("https://github.com/zhmz90/BasePlus.jl.git")
-    end
-end
+@static in("BasePlus", keys(Pkg.installed())) ? nothing : Pkg.clone("https://github.com/zhmz90/BasePlus.jl.git")
 
-using BasePlus
+using BasePlus 
 
 include("dataprovider.jl")
 
