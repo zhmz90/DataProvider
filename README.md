@@ -5,3 +5,8 @@
 [![Coverage Status](https://coveralls.io/repos/zhmz90/DataProvider.jl/badge.svg?branch=master&service=github)](https://coveralls.io/github/zhmz90/DataProvider.jl?branch=master)
 
 [![codecov.io](http://codecov.io/github/zhmz90/DataProvider.jl/coverage.svg?branch=master)](http://codecov.io/github/zhmz90/DataProvider.jl?branch=master)
+
+Task DataProvider for distributed parallel computing
+
+### Functions
+- function dataprovider{T<:AbstractString}(sample_dir::T)
